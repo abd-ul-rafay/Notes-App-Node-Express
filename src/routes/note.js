@@ -26,7 +26,7 @@ router.post("/add", async (req, res)=> {
     res.json(response);
 });
 
-router.post("/delete", async (req, res)=> {
+router.delete("/delete", async (req, res)=> {
 
     await Note.deleteOne({ id: req.body.id });
 
